@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="#">
+        <img src="./Images/logo1-navbar (1).png" alt="Logo 1" width="60" height="35">
+        <img src="./Images/logo1-navbar (2).png" alt="Logo 2" width="60" height="35">
+        <img src="./Images/logo1-navbar (3).png" alt="Logo 3" width="60" height="35">
+        <img src="./Images/logo1-navbar (4).png" alt="Logo 4" width="60" height="35">
+        <img src="./Images/logo1-navbar (5).png" alt="Logo 5" width="60" height="35">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto"> <!-- Added ms-auto to push items to the right -->
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light active fw-bold" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link text-light fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Healthcare Services</a>
+            <ul class="dropdown-menu">
+              <!-- Dropdown items can go here -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a class="nav-link text-light fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Gallery</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="./photo.gallery.html" style="color: #e6549e;">Photo Gallery</a></li>
+              <li><a class="dropdown-item fw-bold" href="./videogallery.html" style="color: #e6549e;">Video Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light fw-bold" href="./blogs.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown mx-4">
+            <a class="nav-link text-light fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="./aboutnursinghome.html" style="color: #e6549e;">About Fehmida Nursing Home</a></li>
+              <li><a class="dropdown-item fw-bold" href="./aboutdr.html" style="color: #e6549e;">About Dr. Fehmida Shaikh</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light fw-bold" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light fw-bold" href="./camp.html">Camp</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link appointment text-light bg-warning fw-bold" href="#" data-bs-toggle="modal"
+              data-bs-target="#myModal">BOOK APPOINTMENT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!---- <nav class="navbar navbar-expand-lg navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-4" href="#">
+        <img src="./Images/logo1-navbar (1).png" alt="Bootstrap" width="60" height="35">
+        <img src="./Images/logo1-navbar (2).png" alt="Bootstrap" width="60" height="35">
+        <img src="./Images/logo1-navbar (3).png" alt="Bootstrap" width="60" height="35">
+        <img src="./Images/logo1-navbar (4).png" alt="Bootstrap" width="60" height="35">
+        <img src="./Images/logo1-navbar (5).png" alt="Bootstrap" width="60" height="35">
+      </a>
+
+      <div>
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3 ">
+                <a class="nav-link text-light  active fw-bold" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown  mx-3">
+                <a class="nav-link text-light fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Healthcare Services
+                </a>
+                <ul class="dropdown-menu">
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link text-light fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fw-bold" href="./photo.gallery.html" style="color: #e6549e;">Photo Gallery</a></li>
+                  <li><a class="dropdown-item fw-bold" href="./videogallery.html" style="color: #e6549e;">Video Gallery</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light fw-bold" href="./blogs.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link text-light fw-bold  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fw-bold " href="./aboutnursinghome.html" style="color: #e6549e;">About Fehmida Nursing
+                      Home</a>
+                  </li>
+                  <li><a class="dropdown-item fw-bold " href="./aboutdr.html" style="color: #e6549e;">About Dr. Fehmida Shaikh</a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light fw-bold" href="./contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-light fw-bold" href="./camp.html">Camp</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link appointment text-light bg-warning fw-bold" href="" data-bs-toggle="modal"
+                  data-bs-target="#myModal">BOOK APPOINTMENT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>-->
+
+
+  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 style="text-align: center;" class="modal-title" id="appointmentModalLabel">Book Your Appointment</h1>
+
+        </div>
+        <div class="modal-body">
+          <h4 style="text-align: center;">"Easily schedule appointments at our compassionate nursing home with just a
+            click."</h4>
+          <form>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your Full Name" required>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label for="contactNumber">Contact Number</label>
+                  <input type="tel" class="form-control" id="contactNumber" placeholder="Enter your Contact Number"
+                    required>
+                </div>
+                <div class="col-6">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Enter your Email Address"
+                    required>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="border-width: thin; border-color: #d3d3d3; border-style: solid; margin-top: 10px; padding-right: 10px; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 5px;"
+              class="form-group1 ">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Select Your Images</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="condition">Condition</label>
+              <textarea class="form-control" id="condition" rows="3" placeholder="Enter your Condition"
+                required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background-color: #e0ffff" data-dismiss="modal">CLOSE</button>
+          <button type="button" class="btn" style="background-color: #e6549e;">BOOK APPOINTMENT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-1 animate__lightSpeedInRight">
+        <h1 class="display-1" style="font-weight: 500; margin-top: 300px; text-align: center; color: #e6549e;">Top
+          Gynaecology and Fertility Center in Mumbai</h1>
+      </div>
+      <div class="swiper-slide slide-2 animate__lightSpeedInRight">
+        <h1 class="display-1" style="font-weight: 500; margin-top: 300px; text-align: center; color: #e6549e;">Top
+          Gynaecology and Fertility Center in Mumbai</h1>
+      </div>
+      <div class="swiper-slide slide-3 animate__lightSpeedInRight">
+        <h1 class="display-1" style="font-weight: 500; margin-top: 300px; text-align: center; color: #e6549e;">Top
+          Gynaecology and Fertility Center in Mumbai</h1>
+      </div>
+      <div class="swiper-slide slide-4 animate__lightSpeedInRight">
+        <h1 class="display-1" style="font-weight: 500; margin-top: 300px; text-align: center; color: #e6549e;">Top
+          Gynaecology and Fertility Center in Mumbai</h1>
+      </div>
+      <div class="swiper-slide slide-5 animate__lightSpeedInRight">
+        <h1 class="display-1" style="font-weight: 500; margin-top: 300px; text-align: center; color: #e6549e;">Top
+          Gynaecology and Fertility Center in Mumbai</h1>
+      </div>
+    </div>
+    <div class="swiper-button-next" style="color: #e6549e;"></div>
+    <div class="swiper-button-prev" style="color: #e6549e;"></div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="div2-home">
+      <div class="row">
+        <div class="col-12 col-md-6 div2-home1"><img src="./Images/home2.png " id="img-div2-home1" class="img-fluid"
+            height="390px" width="340px" alt=""></div>
+        <div class="col-12 col-md-6 div2-home2 fw-bold fs-1">About Fehmida Nursing Home<br><br><button
+            class=" readmore fs-4">Read More</button></div>
+      </div>
+    </div>
+
+    <div class="div3-home">
+      <div class="row">
+        <div class="col-12 col-md-6 div3-home1 fw-bold fs-1 animate__animated animate__backInLeft ">Dr. Fehmida Shaikh<br><br><button
+            class="readmore fs-4">Read
+            More</button></div>
+        <div class="col-12 col-md-6 div3-home2 fw-bold fs-3 animate__animated animate__backInRight ">Dr. Fehmida Shaikh<br>
+          <h5>M.D., D.G.O., D.F.P., M.I.M.S., M.C.P.S., M.B., F.I.C.A.,<br> F.R.S.H.(London).</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="div4-home ">
+      <div class="fw-bold fs-1">Organization<br>
+        <h4>"Strengthening Connections"</h4>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./Images/banner1-organisation.png" class="img-fluid" alt="Image 1"
+              width="1500"></div>
+          <div class="swiper-slide"><img src="./Images/banner2-organisation.png" class="img-fluid" alt="Image 2"
+              width="1500"></div>
+          <div class="swiper-slide"><img src="./Images/banner3-organisation.png" class="img-fluid" alt="Image 3"
+              width="1500"></div>
+          <div class="swiper-slide"><img src="./Images/banner4-organisation.png" class="img-fluid" alt="Image 4"
+              width="1500"></div>
+          <div class="swiper-slide"><img src="./Images/banner5-organisation.png" class="img-fluid" alt="Image 5"
+              width="1500"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div5-home">
+      <div class="fw-bold fs-1">Tele Consultation<br>
+        <h4>"Breaking barriers, bridging distances: Expert care at your fingertips."</h4>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-5 div5-home1 ">
+          <p class="text-justify">At Holistic Gynaecology, Obstetrics, Fertility Treatment, and Associated Procedures,
+            we are proud to offer telecommunication services to enhance accessibility and convenience for our valued
+            patients. Through secure and confidential virtual consultations, our experienced healthcare professionals
+            are dedicated to providing personalized care, guidance, and support from the comfort of your own home.
+            Experience seamless communication and expert medical advice with our telecommunication services today.</p>
+          <br>
+          <button class="schedule-a-call w-100 p-4 fs-6"><i class="fa-solid fa-video" style="color: #e6549e;"></i>
+            SCHEDULE A CALL</button>
+        </div>
+        <div class="col-12 col-md-6 div5-home2"><img src="./Images/teleconsult.png " id="img-div5-home2"
+            class="img-fluid" height="400px" width="600px" alt=""></div>
+      </div>
+    </div>
+
+    <div class="div6-home">
+      <div class="row">
+        <div class="col-12 col-md-12 div6-home1 fw-bold fs-1 ">Our Specialities<br>
+          <h4>"Holistic Gynaecology, Obstetrics, Fertility Treatment and Associated Procedures."</h4>
+          <div class="col-12 col-md-12 div6-home2 fw-bold fs-1 "><button class="viewmore fs-6">VIEW MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div7-home">
+      <div class="fw-bold fs-1 heading7">Why Choose Us<br>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home1 ">
+          <h4><i class="fa-sharp fa-solid fa-1 fa-2xl" style="color:#f3d1e4;"></i> 40+ Years of experience in the field of Ob/Gyn-one of the most experienced docton in Mumbai</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home2 ">
+          <h4><i class="fa-sharp fa-solid fa-2 fa-2xl" style="color:#f3d1e4;"></i> 360 degree health care a holistic approach towards managing your treatment</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home3 ">
+          <h4><i class="fa-sharp fa-solid fa-3 fa-2xl" style="color:#f3d1e4;"></i> Expert, all-female staff that ensures that patients are completely at ease and well informed during treatment</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home4 ">
+          <h4><i class="fa-sharp fa-solid fa-4 fa-2xl" style="color:#f3d1e4;"></i> Free first consultation for Family Planning</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home5 ">
+          <h4><i class="fa-sharp fa-solid fa-5 fa-2xl" style="color:#f3d1e4;"></i> Value added, affordable treatment option</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="fs-3 col-12 col-md-10 div7-home6 ">
+          <h4><i class="fa-sharp fa-solid fa-6 fa-2xl" style="color:#f3d1e4;"></i>  All facilities including sonography, andrology laboratory, pap smear under one roof</h4>
+        </div>
+      </div><br>
+
+      <div class="div8-home">
+        <div class="row">
+          <div class="col-12 col-md-3 div8-home1 fw-bold fs-1 ">
+          <i class="fa-solid fa-users fa-2x"><br><h1>9,000</h1></i><br><h5>Successful Pregnancies</h5>
+          </div>
+          <div class="col-12 col-md-3 div8-home1 fw-bold fs-1 ">
+          <i class="fa-solid fa-user-doctor fa-2x"><br><h1>40</h1></i><br><h5>Years of experience</h5>
+          </div>
+          <div class="col-12 col-md-3 div8-home1 fw-bold fs-1 ">
+          <i class="fa-solid fa-stethoscope fa-2x"><br><h1>3,500</h1></i><br><h5>Surgeries Conducted</h5>
+          </div>
+          <div class="col-12 col-md-3 div8-home1 fw-bold fs-1 ">
+          <i class="fa-solid fa-chart-column fa-2x"><br><h1>3,500</h1></i><br><h5>Statistic about IVF awaited</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="div9-home">
+        <div class="row">
+          <div class="col-12 col-md-12 div9-home1 fw-bold fs-1 ">Testimonials<br>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="div10-home">
+        <div class="row">
+          <div class="col-12 col-md-12 div10-home1 fw-bold fs-1 ">Blog<br>
+            <h4>"We regularly keep you updated!"<h4><br><br>
+            <div class="col-12 col-md-12 div10-home2 fw-bold fs-1 "><button class="viewmore fs-6">VIEW MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div11-home">
+        <div class="row">
+          <div class="col-12 col-md-12 div11-home1 fw-bold fs-1 ">Our Videos<br>
+            <h4>"Experience the compassionate care and joyful moments through our engaging videos."
+              <h4><br><br>
+            <div class="col-12 col-md-12 div11-home2 fw-bold fs-1 "><button class="viewmore fs-6">VIEW MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="div12-home">
+        <div class="row">
+          <div class="col-12 col-md-12 div12-home1 fw-bold fs-1" id="div12">Opening Hours<br>
+            <h4>"Convenient and flexible scheduling to meet your needs."
+              <h4><br>
+          </div>
+        </div>
+        <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 div12-home1 fw-bold  ">Monday - Thursday</div>
+          <div class="col-12 col-md-3 div12-home1 fw-bold  ">Friday - Saturday</div>
+          <div class="col-12 col-md-3 div12-home1 fw-bold  ">Sunday</div>
+          <div class="col-12 col-md-3 div12-home1 fw-bold  ">Personal</div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 div12-home2 fw-bold  ">09:00 AM - 06:00 PM</div>
+          <div class="col-12 col-md-3 div12-home2 fw-bold  ">09:00 AM - 04:00 PM</div>
+          <div class="col-12 col-md-3 div12-home2 fw-bold  ">Emergency Only</div>
+          <div class="col-12 col-md-3 div12-home2 fw-bold  ">Monday - 11:00 AM</div>
+        </div>
+      </div>
+      </div>
+
+      <div class="div13-home">
+        <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 div13-home1 fw-bold fs-3 ">Dr. Fehmida Nursing Home<br>
+            <h6>" Senior most gynecologist , obstetrician , laproscopic surgeon & infertility expert in India "
+            </h6></div>
+          <div class="col-12 col-md-4 div13-home2 fw-bold fs-3 ">Contact Numbers<br>
+            <h6><i class="fa-solid fa-mobile"></i> +91 81080 13327<br>
+              <i class="fa-solid fa-mobile"></i> +91 83559 10096<br>
+              <i class="fa-solid fa-phone"></i>  022 2652 3355
+            <h6><br>
+            <p class="fw-bold fs-3">Email Address
+            <h6><i class="fa-solid fa-envelope"></i> care@fehmidafertilityhospital.com
+            </h6></p>
+            
+            </div>
+            <div class="col-12 col-md-4 div13-home2 fw-bold fs-3 ">Website<br>
+              <h6><i class="fa-solid fa-globe"></i> www.fehmidafertilityhospital.com 
+              <h6><br>
+              <p class="fw-bold fs-3">Address<br>
+              <h6><i class="fa-solid fa-location-dot"></i> Swastik Chamber, Rassiwala Compound, Pipe Line Rd, Kurla West, Mumbai, Maharashtra 400070.
+              </h6></p>
+            </div>
+            <div class="col-md-12 Social"><h3>Social Links: <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-youtube"></i></h3></div>
+        </div>
+      </div>
+      </div>
+
+      <div class="copyright">© 2024 <b>Dr. Fehmida Shaikh</b> | All Rights Reserved.</div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
